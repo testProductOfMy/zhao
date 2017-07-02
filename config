@@ -1,0 +1,4 @@
+from=git-default-1.0
+from=git-dev-1.0
+from=git-test-1.0
+from=git-prod-1.0
