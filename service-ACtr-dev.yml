@@ -93,7 +93,7 @@ hystrix:
         isolation:
           strategy: THREAD
           thread:
-            timeoutInMilliseconds: 5000
+            timeoutInMilliseconds: 20000
         timeout:
           enabled: true
 testRefesh:
