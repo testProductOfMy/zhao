@@ -54,8 +54,10 @@ spring:
   # default is true,refer to SleuthStreamAutoConfiguration.java
   #stream:
   #  enabled: true  
-    
-
+  cloud:
+    bus:
+      trace:
+        enabled: true
 
   rabbitmq:
     host: 47.93.41.245
