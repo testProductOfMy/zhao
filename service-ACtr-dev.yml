@@ -96,7 +96,8 @@ hystrix:
             timeoutInMilliseconds: 1000
         timeout:
           enabled: true
-
+testRefesh:
+  num: hello mv
 feign:
   #开启httpclient支持
   okhttp:
