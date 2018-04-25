@@ -1,14 +1,18 @@
-server:
-  port: 8012
 
+  #key: value 冒号后面需要留一个空格
+server:
+  port: 8012 #服务端口
+  connection-timeout: 30000
+  tomcat:
+    max-connections: 200
+    max-threads: 200
+    min-spare-threads: 50
  
-spring:
-  zipkin:
-    enabled: true
-    base-url: http://localhost:8011
 
   
-        
+
+  
+spring:        
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://47.93.41.245:3306/ag_admin?useUnicode=true&characterEncoding=UTF8
@@ -39,18 +43,10 @@ spring:
     # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
     
     spring.datasource.connectionProperties=druid.stat.mergeSql: true;druid.stat.slowSqlMillis=5000
-
-jasypt:
-  encryptor:
-    bean: encryptorBean
-
-
-
-
-
-
-    
-sleuth:
+  zipkin:
+    enabled: true
+    base-url: http://localhost:8011
+  sleuth:
   sampler:
     # 采样率，默认0.1即10%,如需测试时每次都看到trace则修改为1.0，但对性能有影响，注意上线时修改为合理值
     percentage: 1.0
@@ -59,6 +55,9 @@ sleuth:
   #stream:
   #  enabled: true  
     
+
+
+
 
 
 mybatis:
