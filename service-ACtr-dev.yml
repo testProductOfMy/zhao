@@ -97,7 +97,7 @@ hystrix:
         timeout:
           enabled: true
 testRefesh:
-  num: I love you
+  num: I asdasd you
 feign:
   #开启httpclient支持
   okhttp:
