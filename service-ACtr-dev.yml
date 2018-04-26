@@ -97,7 +97,7 @@ hystrix:
         timeout:
           enabled: true
 testRefesh:
-  num: s232323
+  num: nihaoa
 feign:
   #开启httpclient支持
   okhttp:
