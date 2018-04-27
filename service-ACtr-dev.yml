@@ -85,6 +85,11 @@ eureka:
       defaultZone: http://localhost:8010/eureka/
     healthcheck:
       enabled: true
+logging:
+#  level:
+#    com.netflix.eureka: OFF
+#    com.netflix.discovery: OFF
+  config: classpath:logback.xml	# location of config file (default classpath:logback.xml for logback)
 
 hystrix:
   command:
