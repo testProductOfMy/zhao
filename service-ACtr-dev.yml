@@ -89,7 +89,7 @@ logging:
 #  level:
 #    com.netflix.eureka: OFF
 #    com.netflix.discovery: OFF
-  config: classpath:logback.xml	# location of config file (default classpath:logback.xml for logback)
+  config: classpath:log4j2.xml	# location of config file (default classpath:logback.xml for logback)
 
 hystrix:
   command:
