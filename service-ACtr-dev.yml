@@ -42,16 +42,15 @@ spring:
     filters: stat,wall
     # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
     spring.datasource.connectionProperties=druid.stat.mergeSql: true;druid.stat.slowSqlMillis=5000
-  cloud:
-    bus:
-      trace:
-        enabled: true
-
   rabbitmq:
     host: 47.93.41.245
     port: 5672
     username: admin
     password: 123456
+  cloud:
+    bus:
+      trace:
+        enabled: true
 zipkin:
   enabled: true
   base-url: http://localhost:8011
