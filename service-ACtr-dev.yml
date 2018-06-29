@@ -42,10 +42,10 @@ spring:
     filters: stat,wall
     # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
     spring.datasource.connectionProperties=druid.stat.mergeSql: true;druid.stat.slowSqlMillis=5000
-  zipkin:
-    enabled: true
-    base-url: http://localhost:8011
-  sleuth:
+zipkin:
+  enabled: true
+  base-url: http://localhost:8011
+sleuth:
   sampler:
     # 采样率，默认0.1即10%,如需测试时每次都看到trace则修改为1.0，但对性能有影响，注意上线时修改为合理值
     percentage: 1.0
