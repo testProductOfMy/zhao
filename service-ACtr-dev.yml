@@ -19,7 +19,7 @@ spring:
     max-active: 20
     max-wait: 10
     # 配置获取连接等待超时的时间，配置了maxWait之后，缺省启用公平锁，并发效率会有所下降，如果需要可以通过配置useUnfairLock属性为true使用非公平锁。
-    max-wait: 60000
+    #max-wait: 60000
     # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
     time-between-eviction-runs-millis: 60000
     # 配置一个连接在池中最小生存的时间，单位是毫秒
