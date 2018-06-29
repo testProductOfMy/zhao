@@ -7,11 +7,6 @@ server:
     max-connections: 200
     max-threads: 200
     min-spare-threads: 50
- 
-
-  
-
-  
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -51,11 +46,11 @@ spring:
     bus:
       trace:
         enabled: true
-zipkin:
-  enabled: true
-  base-url: http://localhost:8011
-sleuth:
-  sampler:
+  zipkin:
+    enabled: true
+    base-url: http://localhost:8011
+  sleuth:
+    sampler:
     # 采样率，默认0.1即10%,如需测试时每次都看到trace则修改为1.0，但对性能有影响，注意上线时修改为合理值
     percentage: 1.0
   # stream format  to send trace msg: enable sleuth.stream to use stream
