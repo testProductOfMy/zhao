@@ -6,7 +6,7 @@ spring:
     enabled: true
     base-url: http://localhost:8011
     
- rabbitmq:
+  rabbitmq:
     host: 47.93.41.245
     port: 5672
     username: admin
